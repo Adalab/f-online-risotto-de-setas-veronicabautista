@@ -11,27 +11,38 @@
 		<span class="ingredients">ingredientes</span>
 		<h1 class="tittle">Nombre del plato</h1>
 			<div class="selects">
-				<button type="button" class="select__button">Seleccionar todo</a> | 
-				<button type="button" class="select__button">Deseleccionar todo</a>
+				<span class="select__all">Seleccionar todo</span> 
+					<span> | </span>
+				<span class="unselect__all">Deseleccionar todo</span>
 			</div>
-			<hr class="division__line">
 	</div>
 	</header>
 	<main class="main__container">
-		<div class="list__container">
+		<section class="list__container">
 			<ul class="ingredients__list">
 
 			</ul>
-		</div>
-		<div class="pay__container">
-			<div>
-				<p></p>
-				<p class="pay__subtotal"></p>
-				<p class="pay__shipment"></p>
-				<p class="pay__quantity"></p>
+		</section>
+		<section class="pay__container">
+			<div class="total__container">
+				<p class="checked__items">Items: </p>
+				<div class="subtotal__container">
+						<p>Subtotal</p>
+						<p class="subtotal"></p>
+					</div>
+					<div class="shipping__container">
+						<p>Gastos de envío</p>
+						<p class="shipping__cost"></p>
+					</div>
+					<div class="total__container">
+						<p>Total</p>
+						<p class="total__price"></p>
+					</div>
 			</div>
-			<button class="buy__button btn btn-success"></button>
-		</div>
+			<div class="button__container">
+				<button class="buy__button">Comprar ingredientes</button>
+			</div>
+		</section>
 	</main>
 			<script type="text/javascript" src=" js/main.js"></script>
 		</body>

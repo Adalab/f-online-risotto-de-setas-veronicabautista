@@ -1,5 +1,47 @@
 body {
+  width: 100vw;
   height: 100vh;
 }
+.header__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px 0px 0px 30px;
+  border-bottom: 1px solid #4a90e2;
+}
+.selects {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #4a90e2;
+}
+.select__all {
+  cursor: pointer;
+}
+.unselect__all {
+  cursor: pointer;
+}
+.pay__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+}
+.button__container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buy__button {
+  background-color: green;
+  border-radius: 10px;
+  border-style: none;
+  height: 50px;
+  width: 100vw;
+  color: white;
+  font-size: 1.5em;
 
-/*# sourceMappingURL=main.css.map */
+}
