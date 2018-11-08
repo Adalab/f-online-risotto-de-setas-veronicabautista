@@ -6,7 +6,7 @@ var recipeName = '';
 var shippingPrice = 0;
 var priceToButton = 0;
 var itemsChecked = 0;
-var titleRecipe = document.querySelector('.tittle');
+var titleRecipe = document.querySelector('.title');
 var ingredients = document.querySelector('.ingredients__list');
 var shippingCost = document.querySelector('.shipping__cost');
 var totalPriceCont = document.querySelector('.total__price');
@@ -55,7 +55,7 @@ function getValorInput(i) {
 
 function checkArticle() {
   var allCheckbox = document.querySelectorAll('.checkbox__input');
-  var itemsCheckedContainer = document.querySelector('.items__checked');
+  var itemsCheckedContainer = document.querySelector('.checked__items');
   var subtotal = 0;
   var itemsChecked = 0;
   for (var i = 0; i < allCheckbox.length; i++) {

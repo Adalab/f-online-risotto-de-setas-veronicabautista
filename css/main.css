@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -22,6 +26,13 @@ body {
   padding: 30px 0px 0px 30px;
   border-bottom: 1px solid #4a90e2;
 }
+.header__container p {
+  margin: 0;
+}
+.title {
+  margin: 0;
+  margin-bottom: 10px;
+}
 .selects {
   width: 250px;
   display: flex;
@@ -39,6 +50,47 @@ body {
   overflow : auto;
   width: 500px;
   height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  list-style: none;
+}
+.ingredients__list{
+  margin-top: 250px;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.checkbox__input {
+  margin-top: 25px;
+  height: 20px;
+  width: 20px;
+}
+.quantity__input {
+  margin: 15px 30px 15px 30px;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5em;
+  text-align: center;
+  color: blue;
+  border-style: inset;
+  border-radius: 5px;
+}
+.descripcion__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.descripcion__container h3 {
+  margin: 0;
+}
+.descripcion__container p {
+  margin: 0;
 }
 .pay__container{
   display: flex;
@@ -47,6 +99,27 @@ body {
   align-items: flex-start;
   padding: 30px;
   border-top: 1px solid gray;
+}
+.subtotal__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center
+}
+.shipping__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center
+}
+.total__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center
 }
 .button__container{
   display: flex;
