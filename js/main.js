@@ -30,9 +30,9 @@ function addIngredients() {
       var brand = (recipeIngredients[i].brand != undefined) ? recipeIngredients[i].brand : "";
       listHTML += '<li class="item"><input type="checkbox" class="checkbox checkbox__input" id="checkbox__input_'+ i +'" name="checkbox__input" onclick="checkArticle()">' +
       '<div class="quantity__container"><input type="number" class="quantity__input quantity__input_'+ i +'" onchange="getValorInput('+ i +')" value="1" min="0">' +
-      '</div><div class="descripcion__container"><h3>'
-      + recipeIngredients[i].product + '</h3><p>' + brand + '</p><p>' + recipeIngredients[i].quantity +
-      '</p></div><div class="price__container"><h3 class="price__title' + i + '">'+ recipeIngredients[i].price + recipe.currency +'</h3></div></li>';
+      '</div><div class="descripcion__container"><p class="product">'
+      + recipeIngredients[i].product + '</p><p class="brand">' + brand + '</p><p class="quantity">' + recipeIngredients[i].quantity +
+      '</p></div><div class="price__container"><p class="price__title' + i + '">'+ recipeIngredients[i].price + recipe.currency +'</p></div></li>';
       allPrices.push(recipeIngredients[i].price);
       currency = recipe.currency;
       recipeName = recipe.name;
